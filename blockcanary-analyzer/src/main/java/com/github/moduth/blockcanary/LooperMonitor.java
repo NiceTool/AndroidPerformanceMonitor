@@ -98,7 +98,7 @@ class LooperMonitor implements Printer {
         }
 
         if (null != BlockCanaryInternals.getInstance().cpuSampler) {
-            BlockCanaryInternals.getInstance().cpuSampler.stop();
+           // BlockCanaryInternals.getInstance().cpuSampler.stop();
         }
     }
 }

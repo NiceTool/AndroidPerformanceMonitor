@@ -110,13 +110,13 @@ public class DemoFragment extends Fragment implements View.OnClickListener {
             reader = new FileInputStream("/proc/stat");
             while (reader.read() != -1) ;
         } catch (IOException e) {
-            Log.e(DEMO_FRAGMENT, "readFile: /proc/stat", e);
+//            Log.e(DEMO_FRAGMENT, "readFile: /proc/stat", e);
         } finally {
             if (reader != null) {
                 try {
                     reader.close();
                 } catch (IOException e) {
-                    Log.e(DEMO_FRAGMENT, " on close reader ", e);
+//                    Log.e(DEMO_FRAGMENT, " on close reader ", e);
                 }
             }
         }

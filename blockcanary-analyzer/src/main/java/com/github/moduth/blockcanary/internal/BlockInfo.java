@@ -113,7 +113,7 @@ public class BlockInfo {
                     .getSystemService(Context.TELEPHONY_SERVICE);
             sImei = telephonyManager.getDeviceId();
         } catch (Exception exception) {
-            Log.e(TAG, NEW_INSTANCE_METHOD, exception);
+//            Log.e(TAG, NEW_INSTANCE_METHOD, exception);
             sImei = EMPTY_IMEI;
         }
     }
